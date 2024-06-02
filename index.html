@@ -22,8 +22,9 @@
   <body>
     <div class="wrapper">
       <header id="header" class="header">
-        <div class="logo">
-          <svg
+        <div class="header__wrapper">
+            <div class="logo">
+          <a href="#"><svg
             preserveAspectRatio="xMidYMid meet"
             data-bbox="-0.049 -0.035 160.05 35.031"
             xmlns="http://www.w3.org/2000/svg"
@@ -108,9 +109,9 @@
                 </clipPath>
               </defs>
             </g>
-          </svg>
-        </div>
-        <nav class="nav">
+          </svg></a>
+            </div>
+            <nav class="nav">
           <ul class="navigation no-display">
             <li class="navigation__item">
               <a class="navigation__link" href="#">მთავარი</a>
@@ -130,14 +131,18 @@
                 <span class="line"></span>
                 <span class="line last-line"></span>
             </div>
-        </nav>
+             </nav>
+        </div>
+        <div class="content-overlay"></div>
       </header>
 
-      <main>
+      <main class="main">
+        
         <section id="home"><h1>Home</h1></section>
         <section id="about"><h1>About</h1></section>
         <section id="services"><h1>Services</h1></section>
         <section id="contact"><h1>Contact</h1></section>
+        </div>
       </main>
       <footer></footer>
     </div>

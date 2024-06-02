@@ -15,8 +15,9 @@ window.addEventListener("scroll", function () {
 
 const mobileMenu = document.getElementById("mobile-menu");
 const navMenu = document.querySelector("nav ul");
-
+const mainContent = document.querySelector("body");
 mobileMenu.addEventListener("click", () => {
   navMenu.classList.toggle("show");
   mobileMenu.classList.toggle("rotate");
+  mainContent.classList.toggle("inaccessible");
 });
