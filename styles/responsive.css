@@ -25,7 +25,7 @@
         transform: rotate(-90deg) translateX(-4px);
     }
 
-    .nav ul {
+    .nav .navigation {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -37,11 +37,11 @@
         width: 0;
     }
 
-    .nav ul.no-display {
+    .nav .navigation.no-display {
         width: 0;
     }
 
-    .nav ul.show {
+    .nav .navigation.show {
         display: flex;
         justify-content: start;
         gap: 0;
