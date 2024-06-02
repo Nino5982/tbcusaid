@@ -26,18 +26,12 @@
     }
 
     .nav .navigation {
-        display: none;
         flex-direction: column;
-        width: 100%;
         background-color: rgba(255, 255, 255, 0.9);
         position: fixed;
         top: 0;
         right: 0;
         z-index: 1000;
-        width: 0;
-    }
-
-    .nav .navigation.no-display {
         width: 0;
     }
 
