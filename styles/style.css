@@ -21,6 +21,7 @@ body {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -39,11 +40,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-
 
 }
-
 
 .header.scrolled {
     background: rgba(34, 34, 34, 0.95);
@@ -59,7 +57,6 @@ header {
     display: inline-block;
 }
 
-
 .nav {
     position: relative;
     z-index: 1000;
@@ -69,7 +66,6 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
 }
 
 .navigation .navigation__link {
@@ -191,7 +187,7 @@ header {
 }
 
 .social-link img {
-   
+
     object-fit: cover;
     position: absolute;
     top: 50%;
@@ -233,29 +229,29 @@ header {
 /* header end */
 /* main  start */
 main {
-    padding-top: 80px;
-
-    /* To avoid content being hidden behind the fixed header */
+    padding-top: 84px;
 }
 
-section {
-    padding: 100px 0;
-    text-align: center;
+
+.hero {
+    background-image: linear-gradient(rgba(61, 60, 60, 0.207), rgba(61, 60, 60, 0.322)), url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 352px;
+    display: flex;
+    align-items: center;
 }
 
-#home {
-    background: #f4f4f4;
-
+.hero .first-title {
+    font-size: 34px;
+    line-height: 67px;
+    font-weight: 700;
 }
 
-#about {
-    background: #e2e2e2;
-}
-
-#services {
-    background: #d0d0d0;
-}
-
-#contact {
-    background: #b8b8b8;
+.hero .second-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 67px;
+    display: block;
 }
