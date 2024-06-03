@@ -118,16 +118,10 @@ header {
 }
 
 .footer__wrapper {
-   
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.footer__static{
-display: flex;
-flex-direction: column;
-gap: 20px;
+    align-items: stretch;
 }
 
 .footer__logo {
@@ -136,37 +130,54 @@ gap: 20px;
     margin-bottom: 27px;
 }
 
-.privace .privace__item{
+.footer__static {
+    gap: 20px;
+}
+
+.privacy .privacy__item {
     line-height: 1.6em;
     margin-bottom: 18px;
 }
-/* .footer div {
-    display: grid;
-    height: auto;
-    width: 100%;
-    min-height: auto;
-    grid-template-rows: repeat(3, min-content) 1fr;
-    grid-template-columns: 100%;
-} */
 
-/* .footer__content{
-    display: flex;
-    flex-direction: row;
-}
+.footer__static,
+.contact {
 
-.privace{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-   
 }
-.contact{
-    display: flex;
-    flex-direction: column;
-} */
+
+.contact {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
 .contact__social {
     display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 
+.contact__email {
+    background-color: rgb(0 174 243);
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px 32px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact__email .email-link {
+    line-height: 25.6px;
+
+}
+
+.contact__email:hover {
+    background-color: rgb(255, 255, 255);
+
+}
+.contact__email:hover .email-link {
+    color: black;
+}
 /* footer end */
 
 
