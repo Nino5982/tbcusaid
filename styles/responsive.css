@@ -95,4 +95,32 @@
         padding: 0 10px 0 0;
 
     }
+
+    .contact {
+
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .privacy {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer__wrapper {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .privacy {
+        grid-row: 3 / span 1;
+    }
+
+    .contact {
+        grid-row: 2 / span 1;
+        grid-column: 1/ span 1;
+        max-width: 560px;
+        width: 100%;
+    }
 }
