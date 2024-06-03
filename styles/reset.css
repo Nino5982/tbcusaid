@@ -142,3 +142,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+img {
+    height: auto;
+    max-width: 100%;
+}

@@ -22,10 +22,6 @@ header {
 }
 
 .header__wrapper {
-
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
     height: 84px;
     display: flex;
     align-items: center;
@@ -44,9 +40,10 @@ header {
     margin-right: 40px;
 }
 
-.logo a svg {
+.logo a {
     max-width: 182px;
     width: 100%;
+    display: inline-block;
 }
 
 
@@ -113,10 +110,64 @@ header {
 }
 
 /* header end */
- /* footer start */
+/* footer start */
+.footer {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 64px 0 25px;
+}
 
- 
- /* footer end */
+.footer__wrapper {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__static{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.footer__logo {
+    display: inline-block;
+    width: 106px;
+    margin-bottom: 27px;
+}
+
+.privace .privace__item{
+    line-height: 1.6em;
+    margin-bottom: 18px;
+}
+/* .footer div {
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: repeat(3, min-content) 1fr;
+    grid-template-columns: 100%;
+} */
+
+/* .footer__content{
+    display: flex;
+    flex-direction: row;
+}
+
+.privace{
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+} */
+.contact__social {
+    display: flex;
+}
+
+/* footer end */
 
 
 
@@ -130,7 +181,7 @@ header {
 /* main  start */
 main {
     padding-top: 80px;
-    height: 2000px;
+
     /* To avoid content being hidden behind the fixed header */
 }
 

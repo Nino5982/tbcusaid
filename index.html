@@ -20,68 +20,84 @@
     <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header id="header" class="header">
-        <div class="header__wrapper">
-          <div class="logo">
-            <a href="#">
-              <img src="./images/logo.svg" alt="tbcacademy-logo" />
-            </a>
-          </div>
-          <nav class="nav">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">მთავარი</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">TBC IT</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link active" href="#">TBCxUSAID</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">რისკები</a>
-              </li>
-            </ul>
-            <div class="mobile-menu" id="mobile-menu">
-              <span class="line first-line"></span>
-              <span class="line"></span>
-              <span class="line last-line"></span>
-            </div>
-          </nav>
-        </div>
-        <div class="content-overlay"></div>
-      </header>
-
-      <main class="main">
-        <section id="home"><h1>Home</h1></section>
-        <section id="about"><h1>About</h1></section>
-        <section id="services"><h1>Services</h1></section>
-        <section id="contact"><h1>Contact</h1></section>
-      </main>
-      <footer>
-        <div class="footer__logo">
+    <header id="header" class="header">
+      <div class="header__wrapper wrapper">
+        <div class="logo">
           <a href="#">
-            <img src="./images/tbc-logo.png" alt="Tbc_logo" />
+            <img src="./images/logo.svg" alt="tbcacademy-logo" />
           </a>
         </div>
-        <div class="privace">
-          <h2 class="privace__item">© 2023 ყველა უფლება დაცულია</h2>
-          <a href="#" class="privace__item">წესები და პირობები </a>
+        <nav class="nav">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">მთავარი</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">TBC IT</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link active" href="#">TBCxUSAID</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">რისკები</a>
+            </li>
+          </ul>
+          <div class="mobile-menu" id="mobile-menu">
+            <span class="line first-line"></span>
+            <span class="line"></span>
+            <span class="line last-line"></span>
+          </div>
+        </nav>
+      </div>
+      <div class="content-overlay"></div>
+    </header>
+
+    <main class="main">
+      <section id="home"><h1>Home</h1></section>
+      <section id="about"><h1>About</h1></section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper wrapper">
+        <div class="footer__static">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="./images/tbc-logo.png" alt="Tbc_logo" />
+            </a>
+          </div>
+          <div class="privace">
+            <h2 class="privace__item">
+              <a href="#" target="_blank" rel="noreferrer noopener"
+                >© 2023&nbsp;</a
+              >
+              ყველა უფლება დაცულია
+            </h2>
+
+            <a href="#" class="privace__item">წესები და პირობები </a>
+          </div>
         </div>
+
         <div class="contact">
           <div class="contact__social">
-            <div class="social-icon">
-              <img src="./images/fb.png" alt="facebook-logo" />
-            </div>
-            <div class="social-icon">
-              <img src="./images/youtube.png" alt="youtube-logo" />
-            </div>
+            <a
+              class="social-icon"
+              href="http://#"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/fb.png" alt="facebook-logo"
+            /></a>
+            <a
+              class="social-icon"
+              href="http://#"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/youtube.png" alt="youtube-logo"
+            /></a>
           </div>
           <a class="contact__email">მოგვწერეთ</a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
