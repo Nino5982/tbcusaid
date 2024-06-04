@@ -7,7 +7,7 @@ body {
 body {
     font-family: 'regular', sans-serif;
     font-size: 14px;
-    color: white;
+    color: rgb(244, 244, 244);
 }
 
 .container {
@@ -30,7 +30,7 @@ header {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: rgb(26, 30, 31);
+    background-color: #1a1e1f;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     transition: all 0.3s ease;
 
@@ -79,7 +79,7 @@ header {
 
 .navigation__link.active,
 .navigation__link:hover {
-    color: rgb(0, 163, 224);
+    color: #00a3e0;
     transition: color .4s ease;
 }
 
@@ -222,17 +222,12 @@ header {
 /* footer end */
 
 
-
-
-
-/* mobile-menu end */
-
-/* header end */
 /* main  start */
 main {
     padding-top: 84px;
 }
 
+/* hero section start */
 
 .hero {
     background-image: linear-gradient(rgba(61, 60, 60, 0.207), rgba(61, 60, 60, 0.322)), url(../images/hero.jpg);
@@ -259,27 +254,136 @@ main {
     display: block;
 }
 
+/* hero section end */
+
+/* section about start */
+
 .about {
     background-color: rgb(43, 43, 43);
-    padding: 56px 0;
+    padding: 57px 0;
 }
 
 .about__text {
     margin-bottom: 43px;
-    font-size: 16px;
-    line-height: 24px;
-
+    font-size: 28px;
+    line-height: 1.6em;
+    color: #f4f4f4;
+    overflow-wrap: break-word;
 }
 
 .about .learn-more {
     color: rgb(0, 174, 243);
-    transition: var(--trans, color .4s ease 0s);
-    white-space: nowrap;
+    transition: .4s ease 0s;
+    font-family: 'TBC Sailec', sans-serif;
     font-size: 20px;
     line-height: 28px;
+    font-weight: 900;
     margin-bottom: 57px;
+    transition: color .4s ease 0s;
+    white-space: nowrap;
 }
 
 .about .learn-more:hover {
-    color: rgb(255, 255, 255)
+    color: rgb(170, 170, 170);
 }
+
+/* section about end */
+
+/* section courses start*/
+
+.courses {
+    background-color: rgb(22, 22, 22);
+    padding-top: 34px;
+}
+
+.courses__title {
+    font-size: 24px;
+    color: #DBDBDB;
+    margin-bottom: 54px;
+}
+
+.courses .cards {
+    padding: 10px 0;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 393px);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 11px;
+    column-gap: 40px;
+    margin: auto;
+}
+
+.card {
+    display: grid;
+    border: 1px solid rgb(85 85 85);
+    border-radius: 6px;
+    transition: all 0.1s ease-out 0s, visibility 0s;
+
+}
+
+.card__content {
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card__img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.card__img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card__title {
+    width: 100%;
+
+}
+
+.card__title h3 {
+    font-size: 18px;
+    line-height: 28.8px;
+    margin-bottom: 25px;
+}
+
+.card__title span {
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.card__btn {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 25px;
+    transition: 2s ease 0s;
+    color: #00aeef;
+}
+
+.card__btn .card__link {
+    font-family: 'medium';
+}
+
+
+.card__btn .card__link:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.card__btn .card__link:hover {
+    color: #0080b0;
+}
+
+
+/* section courses end*/
+

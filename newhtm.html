@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="icon" sizes="192x192" href="./images/favicon.png" type="image/png" />
+    <meta name="description" content="website for TBCxUSAID" />
+    <meta name="author" content="Nino Sopoian" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <!-- font awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <header id="header" class="header">
+            <div class="header__wrapper wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/logo.svg" alt="TBCacademy Logo" />
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="navigation">
+                        <li class="navigation__item"><a class="navigation__link" href="#">მთავარი</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">TBC IT</a></li>
+                        <li class="navigation__item"><a class="navigation__link active" href="#">TBCxUSAID</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">რისკები</a></li>
+                    </ul>
+                    <div class="mobile-menu" id="mobile-menu">
+                        <span class="line first-line"></span>
+                        <span class="line"></span>
+                        <span class="line last-line"></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="content-overlay"></div>
+        </header>
+        <main class="main">
+            <section id="hero" class="hero">
+                <div class="hero__block wrapper">
+                    <h1 class="hero__title">
+                        <span class="first-title">TBC x USAID</span>
+                        <span class="second-title">ტექნოლოგიური განათლებისთვის</span>
+                    </h1>
+                </div>
+            </section>
+            <div class="about">
+                <div class="wrapper">
+                    <p class="about__text">
+                        „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა&nbsp; საინფორმაციო ტექნოლოგიებით
+                        დაინტერესებულ ადამიანებს გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს&nbsp;
+                        სხვადასხვა ICT მიმართულებით. წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა დასაქმდნენ თიბისისა
+                        და მის პარტნიორ კომპანიებში.
+                    </p>
+                    <a class="learn-more" href="#">გაიგე მეტი</a>
+                </div>
+            </div>
+            <section class="courses">
+                <div class="wrapper">
+                    <h2 class="courses__title">სასწავლო კურსები</h2>
+                    <div class="cards" id="cards-container">
+                        <!-- Cards will be dynamically inserted here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper wrapper">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="./images/tbc-logo.png" alt="TBC Logo" />
+                    </a>
+                </div>
+                <div class="privacy">
+                    <h2 class="privacy__item">
+                        <a href="#" target="_blank" rel="noreferrer noopener">© 2023&nbsp;</a> ყველა უფლება დაცულია
+                    </h2>
+                    <a href="#" class="privacy__item term">წესები და პირობები </a>
+                </div>
+                <div class="contact">
+                    <ul class="contact__social">
+                        <li class="social-icon">
+                            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/fb.png" alt="Facebook Logo" />
+                            </a>
+                        </li>
+                        <li class="social-icon">
+                            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/youtube.png" alt="YouTube Logo" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contact__email">
+                        <a href="mailto:itacademy@tbcbank.com.ge" class="email-link">მოგვწერეთ</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/load-cards.js"></script>
+</body>
+</html>
