@@ -24,6 +24,14 @@ body {
     padding: 0 20px;
 }
 
+section h2 {
+    font-size: 24px;
+    color: #DBDBDB;
+
+}
+
+/* header */
+
 header {
     position: fixed;
     width: 100%;
@@ -256,6 +264,7 @@ main {
 
 /* hero section end */
 
+
 /* section about start */
 
 .about {
@@ -297,8 +306,7 @@ main {
 }
 
 .courses__title {
-    font-size: 24px;
-    color: #DBDBDB;
+
     margin-bottom: 54px;
 }
 
@@ -338,7 +346,7 @@ main {
 
 
 .card__img {
-    
+
     height: 150px;
     object-fit: cover;
 
@@ -372,12 +380,12 @@ main {
     margin: 0 22px 28px;
     font-size: 16px;
     line-height: 25px;
-    transition: 2s ease 0s;
     color: #00aeef;
 }
 
 .card__btn .card__link {
     font-family: 'medium';
+    transition: 0.5s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
 }
 
 
@@ -396,3 +404,85 @@ main {
 
 
 /* section courses end*/
+/* partners */
+.partners {
+    background-color: #2b2b2b;
+    padding: 35px 0;
+    position: relative;
+}
+
+.slider {
+    height: 224px;
+    width: 632px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.slides-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+        transition: transform 0.5s ease;
+
+}
+
+.slide {
+    /* width: 100px;
+    height: 50px;
+    background-color: red; */
+    margin: 20px;
+}
+
+.arrow-wrapper {
+    width: 80%;
+    /* height: 100%; */
+    display: flex;
+    position: absolute;
+    top: 50%;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-arrow svg {
+    fill: rgb(232 230 230);
+    stroke: rgb(232 230 230);
+    stroke-width: 1px;
+    width: 18px;
+    height: 35px;
+}
+.slideRight{
+        transform: scaleX(-1);
+}
+
+.slider__dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.dot-list {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #717171;
+}

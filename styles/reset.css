@@ -147,3 +147,9 @@ img {
     height: auto;
     max-width: 100%;
 }
+button{
+    border: none;
+        margin: 0;
+        padding: 0;
+    background: transparent;
+}
