@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'regular', sans-serif;
     font-size: 14px;
     color: white;
 }
@@ -30,9 +30,10 @@ header {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(26, 30, 31);
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     transition: all 0.3s ease;
+
 }
 
 .header__wrapper {
@@ -244,14 +245,41 @@ main {
 }
 
 .hero .first-title {
-    font-size: 34px;
+    font-family: 'black', sans-serif;
+    font-size: 42px;
     line-height: 67px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .hero .second-title {
-    font-size: 42px;
-    font-weight: 700;
+    font-family: 'black', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
     line-height: 67px;
     display: block;
+}
+
+.about {
+    background-color: rgb(43, 43, 43);
+    padding: 56px 0;
+}
+
+.about__text {
+    margin-bottom: 43px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.about .learn-more {
+    color: rgb(0, 174, 243);
+    transition: var(--trans, color .4s ease 0s);
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 57px;
+}
+
+.about .learn-more:hover {
+    color: rgb(255, 255, 255)
 }
