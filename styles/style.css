@@ -304,28 +304,37 @@ main {
 
 .courses .cards {
     padding: 10px 0;
-    display: grid;
+    /* display: grid;
     grid-template-rows: repeat(auto-fill, 393px);
     grid-template-columns: repeat(3, 1fr);
     row-gap: 11px;
-    column-gap: 40px;
+    column-gap: 40px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11px;
+
     margin: auto;
 }
 
 .card {
-    display: grid;
+height: 393px;
+    width: 30%;
+    display: flex;
+    /* display: grid; */
     border: 1px solid rgb(85 85 85);
     border-radius: 6px;
+    overflow: hidden;
     transition: all 0.1s ease-out 0s, visibility 0s;
-
-}
-
-.card__content {
-    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
     flex-direction: column;
-    height: 100%;
+
 }
+
+
 
 .card__img {
     width: 300px;
@@ -342,6 +351,7 @@ main {
 
 .card__title {
     width: 100%;
+    margin:0  22px;
 
 }
 
@@ -358,7 +368,7 @@ main {
 }
 
 .card__btn {
-    margin-bottom: 28px;
+    margin: 0 22px 28px;
     font-size: 16px;
     line-height: 25px;
     transition: 2s ease 0s;
