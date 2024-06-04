@@ -314,13 +314,15 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 11px;
-
     margin: auto;
+    margin-bottom: 58px;
+
 }
 
 .card {
-height: 393px;
-    width: 30%;
+    height: 393px;
+    /* min-width: 280px; */
+    width: 31%;
     display: flex;
     /* display: grid; */
     border: 1px solid rgb(85 85 85);
@@ -331,27 +333,26 @@ height: 393px;
     flex-wrap: wrap;
     margin: 0 auto;
     flex-direction: column;
-
 }
 
 
 
 .card__img {
-    width: 300px;
+    
     height: 150px;
     object-fit: cover;
 
 }
 
 .card__img img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .card__title {
     width: 100%;
-    margin:0  22px;
+    margin: 0 22px;
 
 }
 

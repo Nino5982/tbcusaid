@@ -1,6 +1,7 @@
-@media (max-width: 840px) {
+@media (max-width: 1024px) {
  .card {
     width: 45%;
+    height: 311px;
 }
 
 }
@@ -141,10 +142,14 @@
         padding-top: 69px;
     }
 
+ .card {
+        width: 48%;
+        min-width: 218px;
 
+ }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 485px) {
     .hero{
         height:217px;
     }
