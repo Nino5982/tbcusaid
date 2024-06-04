@@ -351,7 +351,7 @@ main {
 }
 
 .card__title {
-    width: 100%;
+    width: 90%;
     margin: 0 22px;
 
 }
@@ -363,7 +363,7 @@ main {
 }
 
 .card__title span {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
 
 }
