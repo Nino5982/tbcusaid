@@ -20,22 +20,27 @@ mobileMenu.addEventListener("click", () => {
   mainContent.classList.toggle("inaccessible");
 });
 
-
 // acordion
 
 document.addEventListener("DOMContentLoaded", function () {
   const accordionItems = document.querySelectorAll(".accordion-item");
 
   accordionItems.forEach((item) => {
-    const title = item.querySelector(".accordion-title");
+    const header = item.querySelector(".accordion-header");
+    const toggle = header.querySelector(".accordion-toggle svg");
     const content = item.querySelector(".accordion-content");
 
-    title.addEventListener("click", function () {
+    header.addEventListener("click", function () {
       // Toggle the active class to expand/collapse the content
-      content.classList.toggle("active");
+      const isActive = content.classList.toggle("active");
+
+      // Rotate the arrow
+      if (isActive) {
+        toggle.style.transform = "rotate(180deg)";
+      } else {
+        toggle.style.transform = "rotate(0deg)";
+      }
     });
   });
 });
-
-
 
