@@ -490,26 +490,42 @@ main {
 /*  questions section  */
 
 .questions {
-
     padding: 75px 0 32px;
 }
-.accordion__wrapper{
-    padding: 30px 40px;
+
+.accordion__wrapper {
+    padding: 30px 20px 20px;
 }
-.accordion__header{
+
+.accordion__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .accordion__header h2 {
     color: rgb(244, 244, 244);
     margin: 0px !important;
     padding: 0px !important;
 }
 
+.accordion__header a {
+    color: rgb(0, 174, 243);
+    transition: color .4s ease 0s;
+    font-size: 20px;
+
+}
+
+.accordion__header a:hover {
+    color: rgb(170, 170, 170);
+}
+
+
+
 .accordion-item {
-border-bottom: 1px solid rgb(53, 49, 49);
-  padding: 15px 0;
+    border-bottom: 1px solid rgb(53, 49, 49);
+    padding: 15px 0;
+
 }
 
 .accordion-header {
@@ -520,8 +536,8 @@ border-bottom: 1px solid rgb(53, 49, 49);
 }
 
 .accordion-title {
-    padding: 10px;
     flex-grow: 1;
+    font-size: 18px;
 }
 
 .accordion-toggle {
@@ -537,8 +553,26 @@ border-bottom: 1px solid rgb(53, 49, 49);
 }
 
 .accordion-content {
-    padding: 10px;
+
     display: none;
+
+}
+
+.accordion-content h4 {
+    margin-bottom: 16px;
+
+}
+
+.accordion-content p {
+    margin-bottom: 7px;
+}
+
+.content_info span {
+    font-weight: 700;
+}
+
+.accordion-content .content_info {
+    margin-left: 1.5em !important;
 }
 
 .accordion-content.active {
