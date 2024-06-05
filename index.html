@@ -16,11 +16,10 @@
     <meta name="author" content="Nino Sopoian" />
 
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
 
-    <!-- font awesome links -->
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -93,26 +92,12 @@
         <section class="partners">
           <div class="wrapper">
             <h2 class="partners__title">პროექტის პარტნიორები</h2>
+            <!-- slider -->
             <div class="slider">
-              <ul class="slides-container" id="slides-container"></ul>
-
-              <div class="arrow-wrapper">
-                <div class="slideLeft slide-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
-                    <path
-                      d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
-                  </svg>
-                </div>
-                <div class="slideRight slide-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
-                    <path
-                      d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="slider__dots">
-                <ul class="dot-list" id="dot-list"></ul>
-              </div>
+              <ul id="slides-container"></ul>
+              <button class="slideLeft">Previous</button>
+              <button class="slideRight">Next</button>
+              <ul id="dot-list"></ul>
             </div>
           </div>
         </section>
@@ -166,6 +151,8 @@
       </footer>
     </div>
 
+    <script src="./js/test.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/load-cards.js"></script>
     <script src="./js/script.js"></script>
   </body>

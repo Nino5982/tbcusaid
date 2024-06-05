@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font-family: 'regular', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: rgb(244, 244, 244);
 }
@@ -248,14 +248,12 @@ main {
 }
 
 .hero .first-title {
-    font-family: 'black', sans-serif;
     font-size: 42px;
     line-height: 67px;
     font-weight: 900;
 }
 
 .hero .second-title {
-    font-family: 'black', sans-serif;
     font-size: 34px;
     font-weight: 900;
     line-height: 67px;
@@ -283,7 +281,6 @@ main {
 .about .learn-more {
     color: rgb(0, 174, 243);
     transition: .4s ease 0s;
-    font-family: 'TBC Sailec', sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 900;
@@ -384,7 +381,6 @@ main {
 }
 
 .card__btn .card__link {
-    font-family: 'medium';
     transition: 0.5s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
 }
 
@@ -408,37 +404,43 @@ main {
 .partners {
     background-color: #2b2b2b;
     padding: 35px 0;
-    position: relative;
 }
 
 .slider {
     height: 224px;
-    width: 632px;
+    width: 980px;
     overflow: hidden;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
 }
 
-.slides-container {
+/* .slides-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 100%;
-        transition: transform 0.5s ease;
+    justify-content: start;
+    gap: 40px;
+    width: 9999px;
+    transition: transform 0.5s ease;
 
-}
+} */
 
+/* .slides-container li,
 .slide {
-    /* width: 100px;
-    height: 50px;
-    background-color: red; */
-    margin: 20px;
+    display: inline-block;
+    max-width: 290px;
+    min-width: 250px;
+    position: relative;
 }
 
-.arrow-wrapper {
+.slides-container li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} */
+
+/* .arrow-wrapper {
     width: 80%;
-    /* height: 100%; */
     display: flex;
     position: absolute;
     top: 50%;
@@ -455,10 +457,11 @@ main {
     width: 18px;
     height: 35px;
 }
-.slideRight{
-        transform: scaleX(-1);
-}
 
+.slideRight {
+    transform: scaleX(-1);
+} */
+/* 
 .slider__dots {
     text-align: center;
     position: absolute;
@@ -467,7 +470,7 @@ main {
 }
 
 .dot-list {
-    
+
     list-style: none;
     display: flex;
     justify-content: center;
@@ -485,4 +488,74 @@ main {
 
 .dot.active {
     background: #717171;
+} */
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Slides Container */
+#slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+   
+}
+
+/* Individual Slide */
+.slide {
+    flex: 0 0 33.33%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Navigation Buttons */
+.slideLeft,
+.slideRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slideLeft {
+    left: 10px;
+}
+
+.slideRight {
+    right: 10px;
+}
+
+/* Dots Container */
+#dot-list {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Individual Dot */
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Active Dot */
+.dot.active {
+    background-color: black;
 }
