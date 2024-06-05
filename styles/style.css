@@ -499,6 +499,7 @@ main {
 .accordion__header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .accordion__header h2 {
     color: rgb(244, 244, 244);
@@ -507,8 +508,8 @@ main {
 }
 
 .accordion-item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+border-bottom: 1px solid rgb(53, 49, 49);
+  padding: 15px 0;
 }
 
 .accordion-header {
@@ -519,7 +520,6 @@ main {
 }
 
 .accordion-title {
-    background-color: #f4f4f4;
     padding: 10px;
     flex-grow: 1;
 }
@@ -532,7 +532,8 @@ main {
 }
 
 .accordion-toggle svg {
-    transition: transform 0.3s ease;
+    transition: background-color .3s;
+    fill: rgb(244, 244, 244) !important;
 }
 
 .accordion-content {
