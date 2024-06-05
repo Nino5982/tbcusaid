@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let intervalId;
 
   // Create slides
-  images.forEach((image, index) => {
+    images.forEach((image, index) => {
     const slide = document.createElement("li");
     slide.className = "slide";
-    slide.innerHTML = `<img src="${image}" alt="Slide ${index + 1}">`;
+      slide.innerHTML = `<img src="${image}" alt="Slide ${index + 1}">`;
     slidesContainer.appendChild(slide);
   });
 
