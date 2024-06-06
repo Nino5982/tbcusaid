@@ -539,24 +539,35 @@ main {
     padding: 75px 0 32px;
 }
 
-.questions .learn-more{
-font-size: 20px;
+.questions .learn-more {
+    font-size: 20px;
+    grid-area: 1 / 2 / 1 / 2;
+    align-self: auto;
+    /* align-self: end; */
+    justify-self: flex-end;
 }
 
 .accordion__wrapper {
-    padding: 30px 20px 20px;
+    padding: 30px 40px;
+    display: grid;
 }
 
-.accordion__header {
+.questions__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.accordion__header h2 {
-    color: rgb(244, 244, 244);
+.questions__header h2 {
+    color: #f4f4f4;
     margin: 0px !important;
     padding: 0px !important;
+}
+
+.accordion {
+    grid-area: 2 / 1 / 2 / 3;
+    padding-bottom: 30px;
 }
 
 
@@ -571,6 +582,9 @@ font-size: 20px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    min-height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .accordion-title {
@@ -596,14 +610,23 @@ font-size: 20px;
 
 }
 
+.accordion-content h4,
+.accordion-content p,
+.accordion-content span {
+    margin-top: 2px;
+    margin-bottom: 3px;
+    line-height: 2;
+}
+
+.content_info,
 .accordion-content h4 {
     margin-bottom: 16px;
-
 }
 
 .accordion-content p {
     margin-bottom: 7px;
 }
+
 
 .content_info span {
     font-weight: 700;

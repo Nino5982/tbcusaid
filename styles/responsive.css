@@ -190,6 +190,17 @@
         width: 30px;
         height: 30px;
     }
+
+    .questions .learn-more {
+        grid-area: 4 / 1 / 5 / 2;
+        align-self: center;
+
+    }
+
+
+    .accordion__wrapper {
+    grid-template-rows: 1fr 4fr 2fr;    }
+
 }
 
 
@@ -213,4 +224,6 @@
     .card__wrapper {
         max-width: 280px;
     }
+
+
 }
