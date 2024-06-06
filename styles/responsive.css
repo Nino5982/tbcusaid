@@ -25,16 +25,13 @@
     }
 
     .card__layer {
-    height: 311px;   
- }
+        height: 311px;
+    }
 
     .slider .navigation_btns {
         display: none;
     }
 
-    #slides-container {
-        grid-auto-columns: calc((100%/2) - 17px);
-    }
 }
 
 
