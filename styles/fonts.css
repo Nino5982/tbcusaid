@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'TBC-regular';
+    src: url('../fonts/TBCX-Regular.eot');
+    src: url('../fonts/TBCX-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TBCX-Regular.woff2') format('woff2'),
+        url('../fonts/TBCX-Regular.woff') format('woff'),
+        url('../fonts/TBCX-Regular.ttf') format('truetype'),
+        url('../fonts/TBCX-Regular.svg#TBCX-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'tbc-font-900';
+    src: url('../fonts/TBCX-Black.eot');
+    src: url('../fonts/TBCX-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TBCX-Black.woff2') format('woff2'),
+        url('../fonts/TBCX-Black.woff') format('woff'),
+        url('../fonts/TBCX-Black.ttf') format('truetype'),
+        url('../fonts/TBCX-Black.svg#TBCX-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
