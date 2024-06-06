@@ -497,6 +497,7 @@ main {
     width: 18px;
     height: 35px;
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 .slide-arrow svg:hover {
