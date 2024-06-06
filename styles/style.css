@@ -64,8 +64,8 @@ header {
 }
 
 .logo a {
-    max-width: 182px;
-    width: 100%;
+    width: 182px;
+    height: 40px;
     display: inline-block;
 }
 
@@ -314,27 +314,20 @@ main {
 
 .courses .cards {
     padding: 10px 0;
-    /* display: grid;
-    grid-template-rows: repeat(auto-fill, 393px);
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 11px;
-    column-gap: 40px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 11px;
+    row-gap: 25px;
+    column-gap: 10px;
     margin: auto;
     margin-bottom: 58px;
+    width: 100%;
 
 }
 
-.card {
-    height: 393px;
-    /* min-width: 280px; */
-    width: 31%;
+.card__wrapper {
     display: flex;
-    /* display: grid; */
     border: 1px solid rgb(85 85 85);
     border-radius: 6px;
     overflow: hidden;
@@ -345,12 +338,26 @@ main {
     flex-direction: column;
 }
 
-
+.card {
+    position: static;
+    display: grid;
+    width: 100%;
+    min-height: auto;
+    margin-top: -2px;
+    grid-template-rows: repeat(4, min-content) 1fr;
+    grid-template-columns: 100%;
+}
 
 .card__img {
 
     height: 150px;
-    object-fit: cover;
+    overflow: hidden;
+    /* position: relative; */
+    margin: 0px 0px 34px 0;
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
 
 }
 
@@ -361,15 +368,18 @@ main {
 }
 
 .card__title {
-    width: 90%;
-    margin: 0 22px;
-
+    margin: 0 22px 10px;
+    grid-area: 2 / 1 / 4 / 2;
+    justify-self: start;
+    align-self: start;
 }
 
 .card__title h3 {
     font-size: 18px;
     line-height: 28.8px;
     margin-bottom: 25px;
+
+
 }
 
 .card__title span {
@@ -379,10 +389,15 @@ main {
 }
 
 .card__btn {
-    margin: 0 22px 28px;
+    margin: 0 22px 23px;
+    padding: 0 8px;
     font-size: 16px;
     line-height: 25px;
     color: #00aeef;
+    grid-area: 5 / 1 / 6 / 2;
+    justify-self: start;
+    align-self: start;
+
 }
 
 .card__btn .card__link {
@@ -403,6 +418,13 @@ main {
     color: #0080b0;
 }
 
+.card__layer {
+    visibility: hidden;
+    height: 335px;
+    width: 0;
+    grid-area: 1 / 1 / 5 / 2;
+
+}
 
 /* section courses end*/
 /* partners */
@@ -411,7 +433,8 @@ main {
     padding: 35px 0;
     position: relative;
 }
-.partners__title{
+
+.partners__title {
     margin-bottom: 31px;
 }
 

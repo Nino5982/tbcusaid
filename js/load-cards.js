@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardsContainer = document.getElementById("cards-container");
 
   coursesData.forEach((course) => {
+    const cardWrapper = document.createElement("div");
+    cardWrapper.className = "card__wrapper";
+    cardsContainer.appendChild(cardWrapper);
+
     const card = document.createElement("div");
     card.className = "card";
 
@@ -49,9 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="card__btn">
                     <a class="card__link" href="#">კურსის დეტალები</a>
                 </div>
+                <div class="card__layer">
+                </div>
             
         `;
 
-    cardsContainer.appendChild(card);
+    cardWrapper.appendChild(card);
   });
 });

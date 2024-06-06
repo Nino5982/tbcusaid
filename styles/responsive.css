@@ -1,11 +1,12 @@
 @media (max-width: 1024px) {
-    .card {
-        width: 45%;
-        height: 311px;
+
+
+    .card__img {
+        margin-bottom: 26px;
     }
 
     .card__title {
-        margin: 0 20px
+        margin-bottom: 10px
     }
 
     .card__title h3 {
@@ -19,7 +20,13 @@
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 20px;
+        margin-left: 18px;
+        grid-area: 4 / 1 / 5 / 2;
     }
+
+    .card__layer {
+    height: 311px;   
+ }
 
     .slider .navigation_btns {
         display: none;
@@ -37,7 +44,7 @@
     }
 
     .logo a {
-        max-width: 130px;
+        width: 130px;
 
     }
 
@@ -162,10 +169,6 @@
         padding-top: 69px;
     }
 
-    .card {
-        width: 48%;
-        min-width: 218px;
-    }
 
 
     .slider {
@@ -210,7 +213,7 @@
         line-height: 48px;
     }
 
-    .card {
-        width: 100%;
+    .card__wrapper {
+        max-width: 280px;
     }
 }
