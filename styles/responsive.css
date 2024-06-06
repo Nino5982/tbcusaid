@@ -1,24 +1,33 @@
 @media (max-width: 1024px) {
- .card {
-    width: 45%;
-    height: 311px;
-}
-.card__title {
-    margin: 0 20px 
+    .card {
+        width: 45%;
+        height: 311px;
+    }
 
-}
-.card__title h3 {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 10px;
-}
+    .card__title {
+        margin: 0 20px
+    }
+
+    .card__title h3 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
 
 
-.card__btn {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 20px;
-}
+    .card__btn {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .slider .navigation_btns {
+        display: none;
+    }
+
+    #slides-container {
+        grid-auto-columns: calc((100%/2) - 17px);
+    }
 }
 
 
@@ -80,10 +89,6 @@
         overflow-y: auto;
         transition: width 0.5s ease-out;
     }
-
-
-
-
 
     .inaccessible {
         overflow: hidden;
@@ -157,17 +162,42 @@
         padding-top: 69px;
     }
 
- .card {
+    .card {
         width: 48%;
         min-width: 218px;
+    }
 
- }
+
+    .slider {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .navigation_btns {
+        width: 100%;
+        min-width: 0;
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    #slides-container {
+        grid-auto-columns: calc((100% / 1) - 17px);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .slide-arrow {
+        width: 30px;
+        height: 30px;
+    }
 }
 
+
 @media (max-width: 485px) {
-    .hero{
-        height:217px;
+    .hero {
+        height: 217px;
     }
+
     .hero .first-title {
         font-size: 24px;
         line-height: 38px;
@@ -179,8 +209,8 @@
         font-size: 26px;
         line-height: 48px;
     }
-   
- .card {
-    width: 100%;
-}
+
+    .card {
+        width: 100%;
+    }
 }

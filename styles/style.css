@@ -419,24 +419,34 @@ main {
 
 /* Slides Container */
 #slides-container {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3) - 17px);
     transition: transform 0.5s ease-in-out;
-    justify-content: start;
-    align-items: center;
     gap: 20px;
     margin-bottom: 24px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 /* Individual Slide */
 .slide {
-    flex: 0 0 31.5%;
-    height: 74px;
-
+    /* height: 74px; */
 }
 
 .slide img {
-    width: 100%;
+    /* width: 100%; */
     display: block;
+    /* object-fit: contain; */
+    /* height: 74px; */
+
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 /* Navigation Buttons */
@@ -458,6 +468,12 @@ main {
     stroke-width: 1px;
     width: 18px;
     height: 35px;
+    transition: 0.4s ease;
+}
+
+.slide-arrow svg:hover {
+    stroke: rgb(149 148 148);
+    fill: rgb(149 148 148);
 }
 
 .slideRight {
@@ -468,7 +484,6 @@ main {
 #dot-list {
     display: flex;
     justify-content: center;
-
 }
 
 .dot {
@@ -483,8 +498,6 @@ main {
 .dot.active {
     background-color: black;
 }
-
-
 
 
 /*  questions section  */
