@@ -131,6 +131,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  function clearDots() {
+    let ul = document.getElementById("dot-list");
+    while (ul.firstChild) {
+      ul.removeChild(ul.firstChild);
+    }
+}
+
+
   window.addEventListener("resize", () => {
     if (window.innerWidth <= 768) {
       slidesPerPage = 1;
@@ -138,7 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerPage = 3;
     }
     totalPages = Math.ceil(totalSlides / slidesPerPage);
-    dots.forEach((dot) => dot.remove());
+
+    clearDots();
     for (let i = 0; i < totalPages; i++) {
       const dot = document.createElement("li");
       dot.className = "dot";
