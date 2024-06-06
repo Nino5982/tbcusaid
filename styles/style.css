@@ -421,7 +421,7 @@ main {
 #slides-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 20px;
     margin-bottom: 24px;
@@ -429,7 +429,7 @@ main {
 
 /* Individual Slide */
 .slide {
-    flex: 0 0 31%;
+    flex: 0 0 31.5%;
     height: 74px;
 
 }

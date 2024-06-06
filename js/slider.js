@@ -49,7 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const autoAdvanceSlider = () => {
-    currentIndex = (currentIndex + slidesPerPage) % totalSlides;
+    if (currentIndex + slidesPerPage >= totalSlides) {
+      currentIndex = 0;
+    } else {
+      currentIndex += slidesPerPage;
+    }
     updateSlider();
   };
 
@@ -68,13 +72,23 @@ document.addEventListener("DOMContentLoaded", () => {
   slidesContainer.addEventListener("mouseover", stopAutoAdvance);
   slidesContainer.addEventListener("touchstart", stopAutoAdvance);
 
-  prevButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - slidesPerPage + totalSlides) % totalSlides;
-    updateSlider();
-  });
+ prevButton.addEventListener("click", () => {
+   if (currentIndex === 0) {
+     currentIndex =
+       totalSlides - (totalSlides % slidesPerPage || slidesPerPage);
+   } else {
+     currentIndex = (currentIndex - slidesPerPage + totalSlides) % totalSlides;
+   }
+   updateSlider();
+ });
+
 
   nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + slidesPerPage) % totalSlides;
+    if (currentIndex + slidesPerPage >= totalSlides) {
+      currentIndex = 0;
+    } else {
+      currentIndex += slidesPerPage;
+    }
     updateSlider();
   });
 
