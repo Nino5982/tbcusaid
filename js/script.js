@@ -1,13 +1,32 @@
 // transparent header  on scroll
 
+let lastScrollTop = 0;
+
 window.addEventListener("scroll", function () {
   const header = document.getElementById("header");
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
+
+  if (window.innerWidth <= 768) {
+    let currentScroll =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Scroll down
+      header.style.top = "-68px"; 
+    } else {
+      // Scroll up
+      header.style.top = "0";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
   } else {
-    header.classList.remove("scrolled");
+    // Reset the header position for larger screens
+    header.style.top = "0";
   }
 });
+
+
+
+
 
 // mobile-menu
 
