@@ -556,7 +556,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 .questions__header h2 {
