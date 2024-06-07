@@ -481,8 +481,9 @@ main {
 
 /* Navigation Buttons */
 .navigation_btns {
+max-width: 1440px;
     min-width: 1020px;
-    width: 80%;
+    width: 90%;
     position: absolute;
     left: 50%;
     top: 50%;
