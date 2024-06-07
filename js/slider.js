@@ -131,23 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // window.addEventListener("resize", () => {
-  //   if (window.innerWidth <= 768) {
-  //     slidesPerPage = 1;
-  //   } else {
-  //     slidesPerPage = 3;
-  //   }
-  //   totalPages = Math.ceil(totalSlides / slidesPerPage);
-  //   dots.forEach((dot) => dot.remove());
-  //   for (let i = 0; i < totalPages; i++) {
-  //     const dot = document.createElement("li");
-  //     dot.className = "dot";
-  //     if (i === Math.floor(currentIndex / slidesPerPage))
-  //       dot.classList.add("active");
-  //     dotList.appendChild(dot);
-  //   }
-  //   updateSlider();
-  // });
 
   updateSlider();
 });
