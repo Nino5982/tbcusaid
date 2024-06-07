@@ -25,6 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateSlider = () => {
     const translateValue = -currentIndex * (100 / slidesPerPage);
     slidesContainer.style.transform = `translateX(${translateValue}%)`;
+
+    const slides = document.querySelectorAll(".slide");
+    slides.forEach((slide, index) => {
+      if (index >= currentIndex && index < currentIndex + slidesPerPage) {
+        slide.classList.add("active");
+      } else {
+        slide.classList.remove("active");
+      }
+    });
+
     dots.forEach((dot, index) => {
       dot.classList.toggle(
         "active",
@@ -130,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
       updateSlider();
     });
   });
-
 
   updateSlider();
 });
